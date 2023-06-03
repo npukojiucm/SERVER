@@ -1,8 +1,8 @@
 /* eslint-disable */
 const socketIO = require('socket.io');
-const { chatMembers } = require('./data/db');
+const { chatMembers } = require('../data/db');
 
-function socket(server) {
+function chat(server) {
   const io = socketIO(server, {
     cors: {
       origin: 'http://localhost:8080',
@@ -77,4 +77,4 @@ function socket(server) {
   return io;
 }
 
-module.exports = socket;
+module.exports = chat;
