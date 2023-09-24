@@ -10,8 +10,6 @@ function chat(server) {
     },
   });
 
-  console.log('Tut');
-
   io.use(async (socket, next) => {
     const { token } = socket.handshake.auth;
     const { nickname } = socket.handshake.query;

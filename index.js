@@ -1,6 +1,6 @@
 const app = require('./app');
 const socketChat = require('./websocket/Chat');
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 7000;
 // const socketInstance = require('./websocket/InstanceManager');
 
 const server = app.listen(port, () => {
