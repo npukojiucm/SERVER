@@ -5,7 +5,7 @@ const { chatMembers } = require('../data/db');
 function chat(server) {
   const io = socketIO(server, {
     cors: {
-      origin: 'http://localhost:8080',
+      origin: 'http://192.168.1.57:8080/',
       methods: ['GET', 'POST'],
     },
   });
