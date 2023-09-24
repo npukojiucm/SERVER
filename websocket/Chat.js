@@ -6,7 +6,6 @@ function chat(server) {
   const io = socketIO(server, {
     cors: {
       origin: ['http://192.168.1.57:8080/', 'http://localhost:8080/'],
-      allowedHeaders: ["my-custom-header"],
     },
   });
 
