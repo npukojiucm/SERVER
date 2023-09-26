@@ -5,7 +5,7 @@ const { chatMembers } = require('../data/db');
 function chat(server) {
   const io = socketIO(server, {
     cors: {
-      origin: ['http://localhost:8080', 'https://npukojiucm.github.io'],
+      origin: ['http://localhost:8080', 'https://npukojiucm.github.io/EventSource-Websocket/1-task/'],
       method: ['GET', 'POST']
     },
   });
